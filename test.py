@@ -36,7 +36,10 @@ print("input shape: " + str(source.shape))
 
 # loss = model(target, channels_list=[source])
 loss = model(target, context=[source])
-loss.backward()  # Do this many times
+
+for i in range(20):
+    print("Train:" + str(i))
+    loss.backward(retain_graph=True)  # Do this many times
 
 # Sample a target audio given start noise and source audio
 noise = torch.randn(1, 1, N)
