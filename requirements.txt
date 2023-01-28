@@ -1,0 +1,2 @@
+audio_diffusion_pytorch == 0.0.29
+torch
