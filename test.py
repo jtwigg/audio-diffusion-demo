@@ -44,7 +44,7 @@ sampled = model.sample(
     context=[source],
     noise=noise,
     num_steps=25  # Suggested range: 2-50
-)  # [2, 1, 2 ** 18]
+)  # Its not [2, 1, 2 ** 18] but rather [1,1,N]
 
 print("Saving output.wav")
 torchaudio.save("output.wav", sampled[0], 48000)
