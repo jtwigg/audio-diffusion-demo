@@ -26,6 +26,8 @@ source = readAudioFile("bucky.wav")
 target = readAudioFile("makeba.wav")
 
 N = source.shape[2]
+
+assert N == target.shape[2]
 print("Processing soure and target of of number of samples: " + str(N))
 print("input shape: " + str(source.shape))
 
