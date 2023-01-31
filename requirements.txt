@@ -1,2 +1,12 @@
-audio_diffusion_pytorch == 0.0.29
 torch
+numpy
+Pillow
+diffusers==0.10.0
+audiodiffusion
+librosa
+datasets
+gradio
+streamlit
+tensorboard
+accelerate
+
