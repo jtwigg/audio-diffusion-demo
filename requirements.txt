@@ -9,4 +9,4 @@ gradio
 streamlit
 tensorboard
 accelerate
-
+basic-pitch
